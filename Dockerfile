@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Build the React app
-npx update-browserslist-db@latest --update-db --yes
+RUN npx update-browserslist-db@latest --update-db --yes
 RUN npm run build
 
 # Expose port 3000 (or the port your app is configured to listen on)
