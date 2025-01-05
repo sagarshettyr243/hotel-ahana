@@ -20,3 +20,12 @@ jobs:
 
       - name: Trivy File Scan
         run: trivy fs . > trivyfs.txt
+
+      - name: Docker Build and Push
+        run: | 
+          docker build -t swiggy-app .
+          docker tag swiggy-app ashfaque9x/swiggy-app:latest
+          docker login -u ${{ vars.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_TOKEN }}
+          docker push ashfaque9x/swiggy-app:latest
+        env:
+          DOCKER_CLI_ACI: 1
