@@ -21,9 +21,7 @@ jobs:
       - name: Trivy File Scan
         run: trivy fs . > trivyfs.txt
         
-    
-
-      - name: Login to Docker Hub
+      - name: Docker Build and Push
         uses: mr-smithers-excellent/docker-build-push@v6
         with:
              image: ashfaque9x/swiggy-app
