@@ -7,10 +7,10 @@ function BestRest() {
         <div style={{width:"85%"}}>
             <h4 className='fw-bold'>Best Places to Eat Across Cities</h4>
             <div className='buttons-grp d-flex justify-content-between'>
-                <button>Best Restaurent in Bangalore</button>
-                <button>Best Restaurent in Pune</button>
-                <button>Best Restaurent in Mumbai</button>
-                <button>Best Restaurent in Delhi</button>
+                <button>Best Restaurent in Brahmavara</button>
+                <button>Best Restaurent in Udupi</button>
+                <button>Best Restaurent in Mangalore</button>
+                <button>Best Restaurent in Kundapura</button>
             </div>
 
             <div className='buttons-grp d-flex justify-content-between mt-3'>
