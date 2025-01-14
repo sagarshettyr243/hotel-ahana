@@ -43,8 +43,7 @@ function RestaurentChain() {
                 </div>
                 <hr style={{width:"100%",marginTop:"-50px"}} />
             </div>
-        </div>
-    )
-}
+         )
+    }
 
 export default RestaurentChain
